@@ -252,6 +252,76 @@ button:focus-visible {
   position: relative;
 }
 
+.main-header {
+  background: #213547;
+  color: #fff;
+  padding: 0.5em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links li a:hover {
+  color: #a3e635;
+}
+.main-footer {
+  background: #213547;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+.contact-section {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 2em auto;
+  max-width: 600px;
+  color: #fff;
+}
+.contact-section a {
+  color: #65a30d;
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0 1em;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .amazon-container {
+    padding: 1em;
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
